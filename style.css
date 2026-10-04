@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+.navbar {
+  height: 68px;
+  background-color: #021820;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  height: 50px;
+  width: 100px;
+  margin-right: 3px;
+}
+.navbar > div {
+  position: relative;
+}
+.navbar > div:not(.nav-search):hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  transform: translateY(-50%);
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.nav-address {
+  margin-right: 15px;
+}
+/* box1 */
+.logo {
+  background-image: url("logo.png");
+  height: 89px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* box2 */
+.add-first {
+  color: #cccccc;
+  font-size: 1rem;
+  margin-left: 3px;
+}
+.add-second {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 2px;
+}
+.add-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+/* box3 */
+.nav-search {
+  display: flex;
+  background-color: #d87878;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  width: 650px;
+  height: 40px;
+  border-radius: 5px;
+}
+.search-select {
+  background-color: #f3f3f3;
+  width: 60px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd9537;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+}
+/* .india{
+    width: 50px;
+    background-color:#dcf5dc
+} */
+/* box4 */
+.sign-in {
+  font-size: 0.7rem;
+  display: flex;
+}
+.account-lists {
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* box4 */
+.return {
+  font-size: 0.7rem;
+  display: flex;
+}
+.orders {
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* box5 */
+.nav-cart {
+  display: flex;
+}
+.nav-cart i {
+  font-size: 30px;
+}
+
+/*  header 2*/
+.navbar2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #142c44;
+  color: white;
+  height: 40px;
+  padding: 0px 9px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.navbar2 .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  flex: 0 0 auto;
+  height: 39px;
+  margin: 0px 3px;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.navbar2 .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  flex: 0 0 auto;
+  height: 39px;
+  margin: 0px 3px;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.navbar2 .box:hover {
+  border: 1px solid #fdfeff;
+  border-radius: 2px;
+}
+.navbar2 .box1:hover {
+  border: 1px solid #fdfeff;
+  border-radius: 2px;
+}
+.navbar2 .menu-icon {
+  width: 28px;
+  height: 27px;
+  margin-right: 5px;
+}
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.banner-container .banner {
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  width: 20%;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 5px 8px;
+  }
+
+  .nav-search {
+    flex: 1 1 260px;
+    width: auto;
+    min-width: 180px;
+  }
+
+  .account,
+  .retrun-order,
+  .nav-cart {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .nav-cart {
+    align-items: center;
+  }
+}
+/* animation of the image is done below */
+/* body {
+    overflow-x: hidden; 
+}
+
+.banner-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    scroll-snap-type: x mandatory; 
+}
+
+.banner-carousel img {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 4px;
+    scroll-snap-align: start;
+}
+
+.banner-carousel::-webkit-scrollbar {
+    display: none;
+} */
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 17px;
+}
+
+.banner-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px; /* Space between images */
+  scroll-behavior: smooth; /* Makes the slide animation smooth */
+}
+
+/* Hides the default scrollbar */
+.banner-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.banner-carousel img {
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 4px solid transparent;
+  /* Added box-shadow to the transition list so it animates smoothly */
+  transition:
+    transform 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+/* Amazon-style slide buttons */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f3f3f3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 29px;
+  padding: 27px 12px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-btn {
+  left: 24px;
+}
+
+.right-btn {
+  right: 24px;
+}
+
+/* quater grid containers */
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.container-lists{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+.quad-card {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  border: 2px solid #858282;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.quad-grid {
+  display: flex;
+    gap: 15px;
+    padding: 5px 1px;
+}
+.quad-card h3 {
+  font-size: 22px;
+    margin-bottom: 3px;
+  color: #0f11  11;
+  text-align: center; /* This centers the text */
+}
+/* endbody of the body part */
+
+.endbody{
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-btn {
+    background-color: #f7bb23;
+    border: 0px solid #ffca46;
+    border-radius: 20px;
+    padding: 12px 36px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.sign-in-btn:hover {
+    background-color: #f0a500;
+}
+
+.navfooter-top p {
+    margin-bottom: 40px;
+    background-color: #37475A;
+    color: #FFF;
+    font-weight: bold;
+}
+.navfooter-top {
+    background-color: #f3f3f3;
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+    color: #111;
+    padding: 7px 0;
+    line-height: 49px;
+    font-size: 14px;
+}
+
+.navfooter-middle{
+  margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #232F3E;
+    min-width: 1000px;
+    position: relative;
+}
+
+.navfooter-middle{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    color: #FFF;
+}
+
+.navfooter-bottom {
+  background-color: #232f3e;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: #dddddd;
+  padding: 28px 20px 20px;
+}
+
+.footer-locale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  min-height: 44px;
+}
+
+.footer-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 42px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.footer-logo::after {
+  position: absolute;
+  right: 15px;
+  bottom: 2px;
+  left: 24px;
+  height: 8px;
+  border-bottom: 3px solid #ff9900;
+  border-radius: 0 0 50% 50%;
+  content: "";
+  transform: rotate(-5deg);
+}
+
+.footer-locale-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-locale-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #848e99;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #dddddd;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer-locale-button:first-child {
+  min-width: 132px;
+}
+
+.footer-region-button {
+  min-width: 92px;
+}
+
+.footer-india-flag {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  list-style: none;
+}
+
+.footer-legal a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-locale {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-legal {
+    margin-top: 20px;
+  }
+}
